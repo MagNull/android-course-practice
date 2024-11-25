@@ -12,7 +12,6 @@ val networkModule = module {
 }
 
 fun provideRetrofit(): Retrofit {
-
     return Retrofit.Builder()
         .baseUrl("https://www.dnd5eapi.co/api/")
         .addConverterFactory(GsonConverterFactory.create())

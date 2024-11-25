@@ -6,7 +6,7 @@ import retrofit2.http.Path
 interface MonstersAPI {
 
     @GET("monsters")
-    suspend fun getMonstersList(): MonstersListResponse
+    suspend fun getMonstersList(): MonstersListResponse?
 
     @GET("monsters/{name}")
     suspend fun getMonsterInfo(@Path("name") name: String): MonsterInfoResponse

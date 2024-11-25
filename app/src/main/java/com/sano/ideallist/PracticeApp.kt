@@ -1,6 +1,7 @@
 package com.sano.ideallist
+
 import android.app.Application
-import com.sano.ideallist.di.rootModule
+import com.sano.ideallist.di.modelModule
 import com.sano.ideallist.di.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -14,7 +15,7 @@ class PracticeApp : Application() {
             androidLogger()
             androidContext(this@PracticeApp)
             modules(networkModule)
-            modules(rootModule)
+            modules(modelModule)
         }
     }
 }

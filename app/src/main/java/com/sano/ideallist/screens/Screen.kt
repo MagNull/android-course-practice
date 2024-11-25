@@ -2,6 +2,7 @@ package com.sano.ideallist.screens
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.List
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.Favorite
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -27,6 +28,12 @@ sealed class Screen(
         title = "Favorites",
         route = "favorites_screen",
         icon = Icons.Outlined.Favorite
+    )
+
+    data object FiltersScreen : Screen(
+        title = "Filters",
+        route = "filters_screen",
+        icon = Icons.Filled.Search
     )
 
     data object DetailsScreen : Screen(
